@@ -20,6 +20,9 @@ env:
 jobs:
   arch:
     runs-on: ubuntu-latest
+    
+    permissions:
+     packages: write
     env:
       IMAGE_TAG: arch
     steps:
@@ -46,6 +49,8 @@ jobs:
 
   fedora:
     runs-on: ubuntu-latest
+    permissions:
+     packages: write
     env:
       IMAGE_TAG: latest
     steps:
